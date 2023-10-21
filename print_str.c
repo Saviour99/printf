@@ -16,9 +16,19 @@ int print_str(va_list string)
 
 	for (i = 0; str[i] != '\0'; i++)
 		len++;
-	for (i = 0; i < len; i++)
-		_putchar(str[i]);
-	return (len);
+	if (str == NULL)
+	{
+		str = "(nil)";
+		for (i = 0; i < len; i++)
+			_putchar(str[i]);
+		return (len);
+	}
+	else
+	{
+		for (i = 0; i < len; i++)
+			_putchar(str[i]);
+		return (len);
+	}
 }
 
 

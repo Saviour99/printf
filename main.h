@@ -4,6 +4,14 @@
 #include <unistd.h>
 #include <stdarg.h>
 
+/**
+ *struct args - structure
+ *@char: id
+ *@int: function
+ *
+ * Description: longer description
+ */
+
 typedef struct args
 {
 	char *id;
